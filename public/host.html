@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MTG Jeopardy — Host</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="host">
+    <header class="topbar">
+      <h1 class="logo">MTG Jeopardy</h1>
+      <span class="roomcode">Room<b id="code">····</b></span>
+      <span class="joinurl" id="joinurl"></span>
+      <span class="spacer"></span>
+      <span class="muted" id="roundname"></span>
+      <button class="btn ghost small" id="skipRound" title="End this round now">Skip round</button>
+      <button class="btn ghost small" id="restart" title="Back to lobby, scores reset">New game</button>
+    </header>
+    <section class="stage" id="stage"></section>
+    <footer class="scores" id="scores"></footer>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="common.js"></script>
+  <script src="host.js"></script>
+</body>
+</html>
